@@ -14,8 +14,10 @@
     vim: expandtab sw=4 ts=4 sts=4:
     $Id: $
 **********************************************************************/
-require_once('client.inc.php');
+header('Location: login.php');
+exit();
 
+require_once('client.inc.php');
 $errors = array();
 // Check if the client is already signed in. Don't corrupt their session!
 if ($_GET['auth']
